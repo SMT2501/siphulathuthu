@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Siphulathuthu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" aria-label="Siphulathuthu Home">
+        <img src="assets/img/icon.png" alt="Siphulathuthu Logo" width="40" height="40" class="d-inline-block align-text-top"> Siphulathuthu
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item d-flex align-items-center ms-3">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="themeToggle" aria-label="Toggle dark/light mode">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-energy d-flex align-items-center justify-content-center text-center text-white">
+    <div class="container position-relative z-2">
+      <h1 class="display-4 fw-bold animate-on-scroll">Our Services</h1>
+      <p class="lead mb-4 animate-on-scroll">Delivering innovative tech, engineering, and sustainability solutions tailored for Africa’s future</p>
+      <div class="hero-cta">
+        <a href="#services-content" class="btn btn-primary btn-lg me-3">Explore Services</a>
+        <a href="contact.html" class="btn btn-outline-light btn-lg">Get in Touch</a>
+      </div>
+    </div>
+    <div class="energy-bg"></div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services-content" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card service-card animate-on-scroll">
+            <div class="card-body">
+              <img src="assets/icons/scada.svg" alt="SCADA Icon" class="mb-3" width="50" height="50">
+              <h3 class="card-title">SCADA & Telemetry</h3>
+              <p>We deliver agile, customized software and hardware solutions tailored to meet our clients' unique needs. With a deep understanding of industries ranging from energy and infrastructure to manufacturing, we enable secure, scalable communication and optimization — both on-site and in the cloud.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#scadaModal">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card service-card animate-on-scroll">
+            <div class="card-body">
+              <img src="assets/icons/networking.svg" alt="Networking Icon" class="mb-3" width="50" height="50">
+              <h3 class="card-title">Networking & Telecommunications</h3>
+              <p>Our mission is to make IT simple, effective, and accessible. We provide best-in-class services that boost small businesses’ competitiveness with seamless connectivity, advanced network designs, and scalable telecom solutions.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#networkingModal">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card service-card animate-on-scroll">
+            <div class="card-body">
+              <img src="assets/icons/ai.svg" alt="AI Icon" class="mb-3" width="50" height="50">
+              <h3 class="card-title">4IR: AI, ML, Big Data & IIoT</h3>
+              <p>Empowering the energy sector through smart analytics, predictive maintenance, robotics, and real-time control systems. We help clients drive sustainable growth through advanced optimization tools and actionable data insights.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aiModal">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card service-card animate-on-scroll">
+            <div class="card-body">
+              <img src="assets/icons/cybersecurity.svg" alt="Cybersecurity Icon" class="mb-3" width="50" height="50">
+              <h3 class="card-title">OT Cybersecurity & IT/OT Convergence</h3>
+              <p>We design secure IT-OT integration frameworks that meet NIST, IEC, and ISO standards. Our approach combines rigorous cybersecurity protocols with system-wide visibility to ensure grid stability and regulatory compliance.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cybersecurityModal">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card service-card animate-on-scroll">
+            <div class="card-body">
+              <img src="assets/icons/training.svg" alt="Training Icon" class="mb-3" width="50" height="50">
+              <h3 class="card-title">Digitization & Sustainability Training</h3>
+              <p>We offer beginner-to-intermediate ICT training programs for NQF4-level learners, covering cybersecurity, telecom systems, networking, digitization, global tech trends, and hands-on device configuration.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trainingModal">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card service-card animate-on-scroll">
+            <div class="card-body">
+              <img src="assets/icons/renewables.svg" alt="Renewables Icon" class="mb-3" width="50" height="50">
+              <h3 class="card-title">Advisory Services in Renewables</h3>
+              <p>We guide clients through renewable energy integration with grid studies, system design, power quality assessments, and strategy development for solar, wind, and hybrid systems.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#renewablesModal">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <h3>Let’s Build a Smarter, More Sustainable Africa</h3>
+        <p>Talk to our experts about how Siphulathuthu can support your next digital or energy transformation.</p>
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals -->
+  <div class="modal fade" id="scadaModal" tabindex="-1" aria-labelledby="scadaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="scadaModalLabel">SCADA & Telemetry</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>We take pride in the progress our organization has made in establishing strong relationships with technology leaders in this sector, empowering us to provide our clients with exceptional value, technical expertise, and top-tier industry technology.</p>
+          <p>We deliver agile, customized software and hardware solutions tailored to meet our clients' unique needs. With a deep understanding of industries ranging from energy and infrastructure to manufacturing and beyond, we facilitate enhanced collaboration through our secure, open solutions, available both on-site and in the cloud. Our clients can effectively communicate with their wider ecosystem and optimize at scale, supported by our secure, open software and a global network of partners.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="networkingModal" tabindex="-1" aria-labelledby="networkingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="networkingModalLabel">Networking & Telecommunications</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Our primary goal is to deliver excellence, and we are committed to making IT as user-friendly, effective, and affordable as possible. By providing best-in-class IT services, smaller companies can enhance their competitiveness while focusing on their core business tasks.</p>
+          <p>Experience a new era of connectivity with our comprehensive suite of network and telecommunication services. Our expert team is dedicated to delivering tailored solutions that empower your business to thrive.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="aiModal" tabindex="-1" aria-labelledby="aiModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="aiModalLabel">4IR: AI, ML, Big Data & IIoT</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Transform your electric power operations with our cutting-edge AI, ML, Big Data, and IoT solutions. Our tailored offerings are designed to maximize efficiency, enhance reliability, and foster sustainable growth in the rapidly evolving energy sector.</p>
+          <p>Utilize our analytics, reporting, and AI-driven optimization tools to evaluate performance, identify trends, and develop more effective campaigns that engage customers who are most likely to interact and convert. These insights will empower you to elevate your business performance.</p>
+          <p>Our comprehensive range of services includes predictive maintenance, real-time monitoring and control, asset monitoring, and robotics.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="cybersecurityModal" tabindex="-1" aria-labelledby="cybersecurityModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cybersecurityModalLabel">OT Cybersecurity & IT/OT Convergence</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>The integration of information technology (IT) systems with operational technology (OT) systems is becoming increasingly vital due to diverse business requirements and functionalities. In utility sectors, IT systems serve a variety of purposes, such as providing internet access, managing workforce scheduling, and generating reports. Conversely, OT systems collect and monitor operational data at the substation and control center levels, thereby ensuring the efficient functioning of the electricity grid. To protect the critical elements of the OT network, secure integration of IT and OT systems is essential.</p>
+          <p>Insights from Grid-India highlight that effective IT-OT integration starts with clearly defining expected outcomes, identifying challenges, evaluating implementation feasibility, enabling necessary restricted processes, creating standard operating procedures, conducting regular cyber audits, and addressing vulnerabilities. Numerous guidelines and regulations govern power utilities and delineate essential cybersecurity measures, including the Guidelines on Cyber Security (NIST Cybersecurity Framework, NISTIR 7626 and 7628), Technical Security Controls and Techniques (IEC 62443-4-2, IEC 62351 series), IEC 62351-12, Internet Standards (IPSec RFC 1827, TLS RFC 5246), as well as National Electricity Grid Codes and National Electricity Plans.</p>
+          <p>Beyond these guidelines and regulations, adopting relevant ISO certifications, such as ISO 27001, is crucial to ensure that all IT-OT integrations adhere to established standards. ISO 27001 is widely implemented in IT contexts, while the NIST Framework and Internet Standards (IPSec and TLS) are relevant in both IT and OT environments. Additionally, IEC standards are increasingly being embraced within OT settings.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="trainingModal" tabindex="-1" aria-labelledby="trainingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="trainingModalLabel">Digitization & Sustainability Training</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>This program serves as an introductory module for Information Systems, Telecommunications, and Cybersecurity, specifically targeting TVET participants with an NQF4 qualification. The modules are crucial for those looking to grasp ICT-related concepts, with a particular emphasis on Telecommunications, Networking, and Cybersecurity. Practical components are integrated into the course outline to enhance the learning experience.</p>
+          <p>The course objectives are designed to equip participants with the following knowledge and skills:</p>
+          <ul>
+            <li>An understanding of basic cybersecurity concepts, focusing on the human element and risks associated with internet usage, including training on phishing, vishing, and more.</li>
+            <li>An introduction to Networking and fundamental Information Technology concepts.</li>
+            <li>An overview of Telecommunications and basic Operational Technology.</li>
+            <li>Insights into Digitization and the Fourth Industrial Revolution (4IR).</li>
+            <li>Awareness of global ICT trends and Africa's position in the international landscape.</li>
+            <li>Fundamental skills in configuring networking and security devices, such as switches, routers, servers, and firewalls.</li>
+            <li>Knowledge to assemble Telecommunication devices and a thorough understanding of the function of each piece of equipment.</li>
+            <li>Practical cybersecurity training using videos and other resources to help participants recognize and understand cybersecurity risks.</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="renewablesModal" tabindex="-1" aria-labelledby="renewablesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="renewablesModalLabel">Advisory Services in Renewables</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Our team of seasoned experts offers comprehensive advisory services to help you navigate challenges and unlock the full potential of your renewable energy projects.</p>
+          <p>We assess power quality parameters to ensure the seamless integration of renewable energy sources, identifying and mitigating potential issues such as harmonics, voltage fluctuations, and power factor problems.</p>
+          <p>We conduct detailed grid studies to evaluate the impacts of renewable energy integration on the power system, analyzing system stability, voltage profiles, and short-circuit levels. We develop strategies to ensure grid compliance and reliability.</p>
+          <p>We design optimal renewable energy systems tailored to your specific needs, taking into consideration site conditions, energy demand, and regulatory requirements. Our goal is to optimize system performance while minimizing costs.</p>
+          <p>Let us be your trusted advisor on your renewable energy journey. Contact us today to discuss your project and explore how our expertise can help you achieve your goals.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section id="hero" class="hero-energy d-flex align-items-center justify-content-center text-center text-white">
+    <div class="container">
+      <h2 class="animate-on-scroll">Let’s Build a Smarter, More Sustainable Africa</h2>
+      <p>Talk to our experts about how Siphulathuthu can support your next digital or energy transformation.</p>
+      <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>Siphulathuthu</h5>
+          <p>Engineering Africa's digital and sustainable future.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+            <li><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+            <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Contact</h5>
+          <p>Carlsworld, Midrand<br>info@siphulathuthu.co.za<br>+27 68 542 4672</p>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <p>© 2025 Siphulathuthu Engineering Services. All Rights Reserved.</p>
+        <p>Designed by <a href="https://virtuodesigns.online/">Virtuo Designs</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

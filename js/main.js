@@ -67,23 +67,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Theme toggle
-  const toggle = document.getElementById('themeToggle');
-  toggle.addEventListener('change', () => {
-    document.body.classList.toggle('bg-dark');
-    document.body.classList.toggle('text-white');
-  });
+const toggle = document.getElementById('themeToggle');
+
+toggle.addEventListener('change', () => {
+  document.body.classList.toggle('bg-dark');
+  document.body.classList.toggle('text-white');
+});
+
 
   // Keyboard navigation for accessibility
-  document.querySelectorAll('.nav-link, .btn').forEach(element => {
-    element.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        // Skip preventDefault for modal buttons
-        if (!element.hasAttribute('data-bs-toggle') || element.getAttribute('data-bs-toggle') !== 'modal') {
-          e.preventDefault();
-          element.click();
-        }
-      }
-    });
+document.querySelectorAll('.nav-link, .btn').forEach(element => {
+  element.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault(); // This blocks Bootstrap's modal trigger
+      element.click();
+    }
   });
 });

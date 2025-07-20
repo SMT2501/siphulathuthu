@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         event.stopPropagation();
       } else {
         event.preventDefault();
-        const name = form.querySelector('#name').value;
+        const name = form.querySelector('#name')?.value || 'User';
         alert(`Thank you, ${name}, for your message! We will get back to you soon.`);
         form.reset();
         form.classList.remove('was-validated');
@@ -53,35 +53,39 @@ document.addEventListener('DOMContentLoaded', () => {
     }, false);
   });
 
-  // Smooth scrolling for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  // Smooth scrolling for anchor links, excluding modal triggers
+  document.querySelectorAll('a[href^="#"]:not([data-bs-toggle="modal"])').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
       e.preventDefault();
-      const target = document.querySelector(anchor.getAttribute('href'));
+      const targetId = anchor.getAttribute('href');
+      const target = document.querySelector(targetId);
       if (target) {
         target.scrollIntoView({
           behavior: 'smooth',
           block: 'start'
         });
+      } else {
+        console.warn(`Target element ${targetId} not found`);
       }
     });
   });
 
-const toggle = document.getElementById('themeToggle');
-
-toggle.addEventListener('change', () => {
-  document.body.classList.toggle('bg-dark');
-  document.body.classList.toggle('text-white');
-});
-
+  // Theme toggle
+  const toggle = document.getElementById('themeToggle');
+  if (toggle) {
+    toggle.addEventListener('change', () => {
+      document.body.classList.toggle('bg-dark');
+      document.body.classList.toggle('text-white');
+    });
+  }
 
   // Keyboard navigation for accessibility
-document.querySelectorAll('.nav-link, .btn').forEach(element => {
-  element.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault(); // This blocks Bootstrap's modal trigger
-      element.click();
-    }
+  document.querySelectorAll('.nav-link, .btn:not([data-bs-toggle="modal"])').forEach(element => {
+    element.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        element.click();
+      }
+    });
   });
-});
 });
